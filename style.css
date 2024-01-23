@@ -90,3 +90,14 @@ body {
 .poem p {
     font-family: 'Noto Sans Tifinagh', sans-serif; 
 }
+
+.centered-button {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+footer a {
+    text-decoration: none;
+  }

@@ -20,6 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Indic+Siyaq+Numbers&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
   </head>
   <body>
     <div class="container my-4">
@@ -110,28 +112,26 @@
         <div class="col-12">
           <div id="errorMessages"></div>
         </div>
-        <button type="submit" class="btn btn-primary" action="terms and conditions.html" method="post">Soumettre</button>
+        <button type="submit" class="btn btn-primary" action="terms and conditions.html" method="post"><i class="fa-solid fa-fire-extinguisher"></i> Soumettre</button>
     </form>
     </div>
 
-    <!-- Pied de page -->
     <footer class="text-center mt-4">
       <a href="terms_and_conditions.html" target="_blank"
-        >Termes et Conditions</a
+        ><i class="fa-solid fa-code-fork"></i> Termes et Conditions <i class="fa-solid fa-code-fork"></i></a
       >
     </footer>
 
-    <!-- Écrans de rejet et de succès -->
     <div id="rejectedScreen" style="display: none">
-      <img src="./assets/images/rejexed.gif" alt="REJEXED" />
+      <a href="assets/images/rejexed.gif"><img src="./assets/images/rejexed.gif" alt="REJEXED" /></a>
       <p class="rejectedText">REJEXED</p>
     </div>
 
     <div id="crackedScreen" style="display: none">
-      <img src="./assets/images/cracked.gif" alt="CRACKED" />
+      <a href="assets/images/cracked.gif"><img src="./assets/images/cracked.gif" alt="CRACKED" /></a>
       <p class="crackedText">CRACKED</p>
     </div>
-
-    <script src="index.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/54bc48c72b.js" crossorigin="anonymous"></script>
   </body>
 </html>
