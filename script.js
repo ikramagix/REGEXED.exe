@@ -1,3 +1,25 @@
+let termsViewed = false;
+
+window.addEventListener('blur', function() {
+    termsViewed = true;
+});
+
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let errors = validateForm();
+
+    if (errors.length > 0) {
+        document.getElementById('errorMessages').innerHTML = errors.join('<br>');
+        return;
+    }
+
+    if (termsViewed) {
+        document.getElementById('crackedScreen').style.display = 'block';
+    } else {
+        document.getElementById('rejectedScreen').style.display = 'block';
+    }
+});
+
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
     let errors = [];
 

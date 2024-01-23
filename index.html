@@ -15,7 +15,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tifinagh&display=swap"
       rel="stylesheet"
+      
     />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Indic+Siyaq+Numbers&display=swap" rel="stylesheet">
   </head>
   <body>
     <form id="registrationForm">
@@ -41,11 +43,25 @@
         placeholder="Confirmer le mot de passe"
         required
       />
-      <input type="checkbox" id="terms" required /> Accepter les CGU
+      <input type="checkbox" id="terms" required /> Accepter les <a href="terms_and_conditions.html" target="_blank">Termes et Conditions</a> ?
       <button type="submit">Soumettre</button>
       <div id="errorMessages"></div>
     </form>
 
     <script src="index.js"></script>
   </body>
+  <!-- Footer link -->
+<footer>
+    <a href="terms_and_conditions.html" target="_blank">Termes et Conditions</a>
+</footer>
+
+<!-- Game Over / Win Screens -->
+<div id="rejectedScreen" style="display: none;">
+    <img src="rejected.gif" alt="REJEXED">
+    <p class="rejectedText">REJEXED</p>
+</div>
+
+<div id="crackedScreen" style="display: none;">
+    <p class="crackedText">CRACKED</p>
+</div>
 </html>
