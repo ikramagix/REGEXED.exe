@@ -15,53 +15,123 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tifinagh&display=swap"
       rel="stylesheet"
-      
     />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Indic+Siyaq+Numbers&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Indic+Siyaq+Numbers&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <form id="registrationForm">
-      <input type="text" id="firstName" placeholder="Prénom" required />
-      <input type="text" id="lastName" placeholder="Nom" required />
-      <input type="number" id="age" placeholder="Âge" required />
-      <input type="email" id="email" placeholder="Adresse e-mail" required />
-      <input
-        type="email"
-        id="confirmEmail"
-        placeholder="Confirmer l'adresse e-mail"
-        required
-      />
-      <input
-        type="password"
-        id="password"
-        placeholder="Mot de passe"
-        required
-      />
-      <input
-        type="password"
-        id="confirmPassword"
-        placeholder="Confirmer le mot de passe"
-        required
-      />
-      <input type="checkbox" id="terms" required /> Accepter les <a href="terms_and_conditions.html" target="_blank">Termes et Conditions</a> ?
-      <button type="submit">Soumettre</button>
-      <div id="errorMessages"></div>
+    <div class="container my-4">
+      <form id="registrationForm" class="row g-3" action="terms and conditions.html" method="post">
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            placeholder="Prénom"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder="Nom"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <input
+            type="number"
+            class="form-control"
+            id="age"
+            placeholder="Âge"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Adresse e-mail"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <input
+            type="email"
+            class="form-control"
+            id="confirmEmail"
+            placeholder="Confirmer l'adresse e-mail"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Mot de passe"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <input
+            type="password"
+            class="form-control"
+            id="confirmPassword"
+            placeholder="Confirmer le mot de passe"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="terms"
+              required
+            />
+            <label class="form-check-label" for="terms">
+              Accepter les
+              <a href="terms_and_conditions.html" target="_blank"
+                >Termes et Conditions</a
+              >
+              ?
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Soumettre</button>
+        </div>
+        <div class="col-12">
+          <div id="errorMessages"></div>
+        </div>
+        <button type="submit" class="btn btn-primary" action="terms and conditions.html" method="post">Soumettre</button>
     </form>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="text-center mt-4">
+      <a href="terms_and_conditions.html" target="_blank"
+        >Termes et Conditions</a
+      >
+    </footer>
+
+    <!-- Écrans de rejet et de succès -->
+    <div id="rejectedScreen" style="display: none">
+      <img src="./assets/images/rejexed.gif" alt="REJEXED" />
+      <p class="rejectedText">REJEXED</p>
+    </div>
+
+    <div id="crackedScreen" style="display: none">
+      <img src="./assets/images/cracked.gif" alt="CRACKED" />
+      <p class="crackedText">CRACKED</p>
+    </div>
 
     <script src="index.js"></script>
   </body>
-  <!-- Footer link -->
-<footer>
-    <a href="terms_and_conditions.html" target="_blank">Termes et Conditions</a>
-</footer>
-
-<!-- Game Over / Win Screens -->
-<div id="rejectedScreen" style="display: none;">
-    <img src="rejected.gif" alt="REJEXED">
-    <p class="rejectedText">REJEXED</p>
-</div>
-
-<div id="crackedScreen" style="display: none;">
-    <p class="crackedText">CRACKED</p>
-</div>
 </html>

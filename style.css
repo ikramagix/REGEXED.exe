@@ -76,3 +76,17 @@ body {
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
+body {
+    padding: 2rem;
+}
+.poem {
+    background-color: #f8f9fa; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.poem p {
+    font-family: 'Noto Sans Tifinagh', sans-serif; 
+}
